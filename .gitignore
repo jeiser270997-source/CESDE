@@ -1,0 +1,11 @@
+﻿# Java compilados
+*.class
+bin/
+
+# VS Code & IDEs
+.vscode/
+
+# Archivos de sistema
+Thumbs.db
+Desktop.ini
+.DS_Store

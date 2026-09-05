@@ -1,0 +1,59 @@
+EVIDENCIA DE APRENDIZAJE - LÓGICA DE PROGRAMACIÓN
+ESTUDIANTE: Jeiser Gutierrez
+
+============================================================
+
+ENUNCIADO:
+1. Construya un Algoritmo que al recibir como dato el promedio de un
+alumno en un curso universitario, determine si aprobó (promedio >= 3.0),
+si aplica para proceso de mejoramiento de promedio (entre 2.0 y 2.9),
+o si reprobó (menor a 2.0).
+
+============================================================
+
+DATOS DE ENTRADA:
+nombre = ""
+promedio = 0
+
+PROCESO:
+SI (promedio >= 3.0) ENTONCES
+    mensaje = "Aprobó"
+SINO
+    SI (promedio >= 2.0) ENTONCES
+        mensaje = "Aplica para proceso de mejoramiento de promedio"
+    SINO
+        mensaje = "Reprobó"
+    FIN SI
+FIN SI
+
+DATOS DE SALIDA:
+nombre
+promedio
+mensaje
+
+============================================================
+
+ALGORITMO (PSEUDOCÓDIGO):
+
+INICIO
+    nombre = ""
+    promedio = 0
+    mensaje = ""
+
+    Imprima "Ingrese el nombre del estudiante:"
+    Lea nombre
+    Imprima "Ingrese el promedio del estudiante:"
+    Lea promedio
+
+    SI (promedio >= 3.0) ENTONCES
+        mensaje = "Aprobó"
+    SINO
+        SI (promedio >= 2.0) ENTONCES
+            mensaje = "Aplica para proceso de mejoramiento de promedio"
+        SINO
+            mensaje = "Reprobó"
+        FIN SI
+    FIN SI
+
+    Imprima "El estudiante " + nombre + " " + mensaje + " la materia ya que su promedio fue: " + promedio
+FIN
