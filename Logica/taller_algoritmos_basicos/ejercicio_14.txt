@@ -1,0 +1,80 @@
+EJERCICIO 14
+
+ENUNCIADO
+
+Elaborar un algoritmo que le permita al usuario ingresar los
+datos de la factura de servicios públicos y el computador le
+muestre el total que debe pagar. El usuario ingresará el total
+de KV de energía y el valor del K, el total de M3 de agua y el
+valor del M3, el total de impulsos telefónicos y el valor del
+impulso.
+
+
+//DATOS DE ENTRADA
+
+kv_energia = 0
+valor_kv = 0
+m3_agua = 0
+valor_m3 = 0
+impulsos_tel = 0
+valor_impulso = 0
+
+
+//PROCESO
+
+total_energia = kv_energia * valor_kv
+total_agua = m3_agua * valor_m3
+total_tel = impulsos_tel * valor_impulso
+total_servicios = total_energia + total_agua + total_tel
+
+
+//DATOS DE SALIDA
+
+total_energia
+total_agua
+total_tel
+total_servicios
+
+
+INICIO
+
+	kv_energia = 0
+	valor_kv = 0
+	m3_agua = 0
+	valor_m3 = 0
+	impulsos_tel = 0
+	valor_impulso = 0
+	total_energia = 0
+	total_agua = 0
+	total_tel = 0
+	total_servicios = 0
+
+	Escribir "Ingrese la cantidad de KV de energia consumidos"
+	Leer kv_energia
+	Escribir "Ingrese el valor por KV de energia"
+	Leer valor_kv
+	Escribir "Ingrese los M3 de agua consumidos"
+	Leer m3_agua
+	Escribir "Ingrese el valor por M3 de agua"
+	Leer valor_m3
+	Escribir "Ingrese la cantidad de impulsos telefonicos"
+	Leer impulsos_tel
+	Escribir "Ingrese el valor por impulso telefonico"
+	Leer valor_impulso
+
+	//PROCESO
+
+	total_energia = kv_energia * valor_kv
+	total_agua = m3_agua * valor_m3
+	total_tel = impulsos_tel * valor_impulso
+	total_servicios = total_energia + total_agua + total_tel
+
+	//DATOS DE SALIDA
+
+	Escribir "Total Energia: ", total_energia
+	Escribir "Total Agua: ", total_agua
+	Escribir "Total Telefono: ", total_tel
+	Escribir "Total a pagar en la factura de servicios: ", total_servicios
+	Escribir "Programa realizado por Jeiser Gutierrez"
+
+FIN

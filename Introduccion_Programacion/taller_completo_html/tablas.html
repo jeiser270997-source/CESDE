@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tablas HTML5 | Taller HTML CESDE</title>
+</head>
+<body>
+
+  <header>
+    <h1>Taller de Tablas Estructuradas</h1>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="tablas.html">Tablas</a> |
+      <a href="listas.html">Listas</a> |
+      <a href="formularios.html">Formularios</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>1. Tabla Semántica con &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;</h2>
+      
+      <table border="1" width="80%">
+        <caption><strong>INFORMACIÓN EMPRESARIAL</strong></caption>
+        <thead>
+          <tr>
+            <th>Jefe Departamento</th>
+            <th>Jefe Sección</th>
+            <th>Empleados a Cargo</th>
+            <th>Edad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Alberto Chan</td>
+            <td>Martín López</td>
+            <td>Liliana García</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Juan Alberto Chan</td>
+            <td>Luis Morales</td>
+            <td>Marina Ramírez</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Diana Rodríguez</td>
+            <td>Carlos Hernández</td>
+            <td>Juan García</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Diana Rodríguez</td>
+            <td>Luis Pérez</td>
+            <td>Diego Gutiérrez</td>
+            <td>47</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="3">Total Empleados</th>
+            <th>4</th>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>2. Tabla con Fusión de Celdas (&lt;td colspan="..."&gt; y &lt;td rowspan="..."&gt;)</h2>
+
+      <table border="1" width="80%">
+        <caption><strong>Almacén XYZ Ltda</strong></caption>
+        <thead>
+          <tr>
+            <th>Ubicación Almacén</th>
+            <th>Jefe Directo</th>
+            <th>Encargado</th>
+            <th>Cantidad Empleados</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">Av. Oriental</td>
+            <td>Elizabeth García</td>
+            <td>Liliana Vera</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>Luis Morales</td>
+            <td>Marcelo Arnijas</td>
+            <td>57</td>
+          </tr>
+          <tr>
+            <td>Av. Ferrocarril</td>
+            <td>Carlos Hernández</td>
+            <td>Laura López</td>
+            <td>35</td>
+          </tr>
+          <tr>
+            <td>Av. Poblado</td>
+            <td colspan="2">Diego Gutiérrez (Administrador)</td>
+            <td>47</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>3. Tabla Geográfica</h2>
+
+      <table border="1" width="60%">
+        <caption><strong>Distribución de Países y Capitales</strong></caption>
+        <tbody>
+          <tr>
+            <th colspan="2">Países Europeos</th>
+          </tr>
+          <tr>
+            <td>España</td>
+            <td>Madrid</td>
+          </tr>
+          <tr>
+            <td>Francia</td>
+            <td>París</td>
+          </tr>
+          <tr>
+            <td>Reino Unido</td>
+            <td>Londres</td>
+          </tr>
+          <tr>
+            <th colspan="2">América del Norte</th>
+          </tr>
+          <tr>
+            <td>EEUU</td>
+            <td>Washington</td>
+          </tr>
+          <tr>
+            <td>Canadá</td>
+            <td>Ottawa</td>
+          </tr>
+          <tr>
+            <td>México</td>
+            <td>Ciudad de México</td>
+          </tr>
+          <tr>
+            <th colspan="2">América del Sur</th>
+          </tr>
+          <tr>
+            <td>Colombia</td>
+            <td>Bogotá</td>
+          </tr>
+          <tr>
+            <td>Argentina</td>
+            <td>Buenos Aires</td>
+          </tr>
+          <tr>
+            <td>Brasil</td>
+            <td>Brasilia</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p><strong>Estudiante:</strong> Jeiser Abraham Gutiérrez | <a href="mailto:jeisgutierrez@cesde.net">jeisgutierrez@cesde.net</a></p>
+    <p><small>&copy; 2026 CESDE - Introducción a la Programación</small></p>
+  </footer>
+
+</body>
+</html>

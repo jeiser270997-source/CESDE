@@ -1,0 +1,58 @@
+EJERCICIO 11
+
+ENUNCIADO
+
+Elaborar un algoritmo que calcule el valor que le puede
+prestar un banco a una persona, sabiendo que el monto del
+préstamo es 50 veces el dinero disponible que tiene. El
+dinero disponible es igual al salario mensual mas los
+ingresos adicionales menos los gastos. Se debe mostrar el
+dinero disponible y el monto del préstamo.
+
+
+//DATOS DE ENTRADA
+
+salario_mensual = 0
+ingresos_adicionales = 0
+gastos = 0
+
+
+//PROCESO
+
+dinero_disponible = (salario_mensual + ingresos_adicionales) - gastos
+monto_prestamo = dinero_disponible * 50
+
+
+//DATOS DE SALIDA
+
+dinero_disponible
+monto_prestamo
+
+
+INICIO
+
+	salario_mensual = 0
+	ingresos_adicionales = 0
+	gastos = 0
+	dinero_disponible = 0
+	monto_prestamo = 0
+
+	Escribir "Ingrese el salario mensual"
+	Leer salario_mensual
+	Escribir "Ingrese los ingresos adicionales mensuales"
+	Leer ingresos_adicionales
+	Escribir "Ingrese los gastos mensuales"
+	Leer gastos
+
+	//PROCESO
+
+	dinero_disponible = (salario_mensual + ingresos_adicionales) - gastos
+	monto_prestamo = dinero_disponible * 50
+
+	//DATOS DE SALIDA
+
+	Escribir "Dinero disponible mensual: ", dinero_disponible
+	Escribir "Monto maximo de prestamo bancario (50 veces): ", monto_prestamo
+	Escribir "Programa realizado por Jeiser Gutierrez"
+
+FIN

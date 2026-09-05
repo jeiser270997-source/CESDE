@@ -1,0 +1,86 @@
+LOGICA DE PROGRAMACION
+REPASO
+DATO =5 , JUAN , A , ROJO
+PROCESO = CONJUNTO DE OPERACIONES LOGICAS Y ARITMETICAS
+CAMPO = ESPACIO EN MEMORIA RAM QUE TIENE DEFINIDO UN TIPO  Y UN NOMBRE
+CAMPO CONSTANTE NUMERICO PI GRAVEDAD IVA, QUE ES EULER?
+CAMPO CONSTANTE ALFANUMERICO PAIS = "ESPAÑA"
+EMPRESA = "CESDE"
+
+
+CAMPO VARIABLE EJEMPLO 
+
+
+numero1 = "30"
+numero2 = "43"
+esta entre comillas es texto
+
+
+resultado de la concatenacion seria 3043
+
+
+si le quitas las comillas es 73 
+
+
+textos se juntan numeros se suman
+
+
+FILA ES UN REGISTRO 
+1 ARCHIVO PUEDE SER LA MISMA BASE DE DATOS
+HAY MUCHOS TIPOS DE CAMPOS NUMERICOS
+ARREGLOS O ARRAYS SE CONOCEN COMO VECTOR, ES IGUAL QUE UNA MATRIZ?
+
+
+TIPOS DE DATOS NUMERICOS
+
+
+ENTEROS INT FLOAT FLOTANTE DECIMAL DOBLE MAS GRANDE
+ALFANUMERICOS STRING SE REPRESENTAN ENTRE COMILLAS COMO TEXTO
+
+
+OPERADORES LOGICOS SE DIVIDEN EN 2 COMPARACION Y BOOLEANOS
+COMPARACION <> <= >= BOOLEANOS ES AND OR O NOT
+
+
+OPERADORES ARITMETICOS
+
+
+JERARQUIA ESTUDIAR LA JERARQUIA 
+
+
+
+
+algoritmo pasos ordenados y logicos para resolver un problema 
+pseudocodigo  forma sencilla de probar un algoritmo
+pseint software educativo para hacer pseudocodigo para hacer la prueba de los algoritmos
+
+
+
+
+algoritmos cualitativos y cuantitativos
+
+
+1 algoritmo
+2 programar lenguaje
+3 validacion y ejecucion
+
+
+vamos a trabajar mas en algoritmo
+
+
+algoritmo en pseint para  calcular el area de un triangulo
+
+
+
+
+Algoritmo calculoArea
+baseTriangulo=0
+alturaTriangulo=0
+areaTriangulo= ( baseTriangulo * alturaTriangulo) / 2
+Imprimir "Ingrese la Base del triangulo en centimetros"
+leer baseTriangulo
+Imprimir "Ingrese la Altura del Triangulo en centimetros"
+Leer alturaTriangulo
+areaTriangulo= ( baseTriangulo * alturaTriangulo) / 2
+Imprimir "El Area del Triangulo es " , areaTriangulo , "centimetros"
+FinAlgoritmo

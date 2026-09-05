@@ -1,4 +1,28 @@
-﻿# Java compilados
+﻿# Regla 29: Cero binarios y medios en Git (solo texto y codigo)
+*.pdf
+*.docx
+*.pptx
+*.ppsx
+*.xlsx
+*.zip
+*.tar.gz
+*.7z
+*.rar
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.ico
+*.mp3
+*.wav
+*.opus
+*.m4a
+*.mp4
+*.mkv
+*.exe
+
+# Java compilados
 *.class
 bin/
 

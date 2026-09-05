@@ -1,0 +1,131 @@
+BASE DE DATOS
+base de datos
+playlist pelicula de spotify en netflix habla sobre base de datos
+modelos relacionales
+entidad  cosa u objeto del mundo real persona curso producto
+atributo  parte de la informacion  //seria como un objeto en programacion
+relacion como se conocen un estudiante toma muchos cursos
+
+
+base de datos es un conjunto de datos organizados, estructurados y almacenados de forma sistemica para que puedan ser consultados, actualizados y administrados de manera eficiente
+
+
+administrador de bases de datos
+permite tomar decisiones mas precisas seguras rapidas transformando la informacion en una herramienta util para el crecimiento y la eficiencia
+
+
+sistema de gestion de bases de datos SGBD
+
+
+crea modifica borra bases y tablas
+insertar consultar actualizar y eliminar datos
+mantener integridad seguridad y rendimiento
+
+
+motores de base de datos
+
+
+oracle mysql casandra maria db sql server postgrest sqlite
+
+
+SGBD phpmyadmin sqlserver managment studio 22 heidi sql workbench
+
+
+cual es la diferencia entre motor y el sistema de gestion sgbd
+
+
+podemos trabajar en motores de bases de datos sin gestores
+
+
+en los servidores solo se instalan comandos mas es linux por codigo abierto, no hay nada visual ni interfaz grafica, hay servidores windows pero pocos
+
+
+comandos a los motores
+
+
+select consulta insert insertar delete borrar update modificar
+
+
+sgbd manipula la base de datos facilmente interfaz grafica 
+
+
+solo trabajar con motor bajo nive
+
+
+sgbd alto nivel en lenguaje de programacion como ejemplo
+
+
+todas las aplicaciones tienen servicios  los servicios son como ayudantes 
+
+
+que es exactamente levantar un servicio en localhost, porque es necesario?  que hace? 
+
+
+tabla corresponde a una entidad del mundo real
+registro  fila o tupla  cada fila representa una instancia concreta  de esa entidad  ejemplo un estudiante especifico
+columna  describe  una propiedad del objeto nombre codigo nota etc
+clave primaria columna o conjunto de columnas que identifica de forma unica cada fila
+clave foranea columna que hace referencia  a la clave primaria de otra tabla
+
+
+
+
+vamos a crear una base de datos llamada cesde tiene una tabla de usuarios y una tabla tipos de usuarios  nombrada  tipos-usuarios con un guion  o sin guion o con guion bajo , no puede tener espacios los nombres de las tablas , porque tienen que ser sin espacios? aqui se usa tambien camel case, kebabcase?  tampoco pueden tener caracteres especiales  ni numeros, no deberia , osea usa el mismo principio de las variables.
+
+
+aqui se usa pascal case  y camel case
+entidades en pascal atributos en camel case
+
+
+que diferencia hay con snake case ?
+
+
+tablas 
+
+
+usuarios
+
+
+
+
+las entidades van en recuadros con los nombres arriba , la llave primaria va siempre de primero, seria id de tipo entero int
+
+
+segun el perfil del docente es preferible un id interno ya que por ejemplo una app a nvel mundial se podrian repetir los id o numeros de documento de cada persona en el mundo pero pienso que es un edge case dime algun ejemplo, paises que manejen la misma numerologia en tipo de documento, dimos ejemplo en el exito 2 cajas pagando al tiempo con las misma cedula pero la clave principal seria el numero de operacion y la cc seria una clave foranea porque si ambos al tiempo damos la misma cedula se duplicaria la factura? que podria pasar?
+
+
+buscar tipos de datos en sql los mas comunes y populares
+
+
+int decimal nchar texto y varchar , char, int y decimal perfecto los entiendo enteros y decimales, varchar nchar y variables de estos?
+
+
+tabla usuarios id int nombre varchar
+en el primer momento se va a dibujar el modelo entidad relacion y el modelo relacional, de un proyecto que vamos a realizar 
+
+
+cambiamos edad por fecha  para buenas practicas, tengo una duda la profe de logica dijo que id es caracter texto porque no se van a hacer operaciones aritmeticas pero en base de datos es int para evitar la corrupcion de datos entonces esto que es? buenas practicas? tiene algun nombre? o normalizacion de datos? o es relativo como camel case y pascal case?  relativo depende de como vayamos avanzando en la experiencia y el perfil y manera de trabajar
+
+
+fechaNacimiento tipo de dato date
+
+
+el atributo tiene nombre tipo y longitud asi se identifican los datos
+
+
+la variable en logica es parecida a un campo en base de datos , cajas que guardan datos
+
+
+break por ahora hasta aqui
+
+
+el proyecto final va a ser por año y medio osea hasta la graduacion equipos de 5 maixmo, esto no son los momentos, los momentos son las evaluaciones son de cada profe de cada materia, el proyecto es de todo el semestre y se va a ir yendo por todos los 3 semestres, como una tesis pero sin tanta teoria porque esto es practica el cesde es practicas
+
+
+soy el grupo 3 ya esta creado el grupo en whatsapp hay que buscar ejemplos, ver s hay proyectos publicados en linea del cesde para ver como es la modalidad y tomar ejemplos y hacer lluvia de ideas y ver si los otros compañeros estan en la misma pagina ya que el profe hizo una modalidad como de cabezas, los que tenian mejor dominio de tema y de ahi se desglosaron los demas equipos
+
+
+fin de base de datos de hoy
+
+
+BASE DE DATOS 8/08/26

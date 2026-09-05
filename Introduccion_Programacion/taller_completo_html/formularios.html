@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios HTML5 | Taller HTML CESDE</title>
+</head>
+<body>
+
+  <header>
+    <h1>Taller de Formularios y Controles</h1>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="tablas.html">Tablas</a> |
+      <a href="listas.html">Listas</a> |
+      <a href="formularios.html">Formularios</a>
+    </nav>
+  </header>
+
+  <hr>
+
+  <main>
+    <section>
+      <h2>Registro de Estudiante / Usuario</h2>
+
+      <form action="#" method="POST" autocomplete="on">
+
+
+        <fieldset>
+          <legend><strong>1. Información Personal</strong></legend>
+          <br>
+
+          <label for="txtNombre">Nombre Completo:</label><br>
+          <input type="text" id="txtNombre" name="nombre" placeholder="Ej: Jeiser Abraham" required maxlength="50"><br><br>
+
+          <label for="txtEmail">Correo Electrónico:</label><br>
+          <input type="email" id="txtEmail" name="email" placeholder="usuario@correo.com" required autocomplete="off"><br><br>
+
+          <label for="txtTelefono">Teléfono / Celular (10 dígitos):</label><br>
+          <input type="tel" id="txtTelefono" name="telefono" placeholder="3001234567" pattern="[0-9]{10}" title="Debe contener exactamente 10 dígitos numéricos" required><br><br>
+
+          <label for="txtPassword">Contraseña de Acceso:</label><br>
+          <input type="password" id="txtPassword" name="password" placeholder="Mínimo 8 caracteres" minlength="8" required><br><br>
+
+          <label for="txtFecha">Fecha de Nacimiento:</label><br>
+          <input type="date" id="txtFecha" name="fecha_nacimiento" min="1950-01-01" max="2026-12-31" value="2000-01-01"><br><br>
+
+          <label for="numEdad">Edad:</label><br>
+          <input type="number" id="numEdad" name="edad" min="15" max="99" placeholder="18"><br><br>
+
+          <label for="urlWeb">Sitio Web / Portafolio:</label><br>
+          <input type="url" id="urlWeb" name="sitio_web" placeholder="https://miportafolio.com"><br><br>
+
+          <label for="txtBuscar">Búsqueda rápida:</label><br>
+          <input type="search" id="txtBuscar" name="busqueda" placeholder="Buscar módulo..."><br><br>
+
+          <label for="colorFav">Color Favorito:</label><br>
+          <input type="color" id="colorFav" name="color_perfil" value="#1E90FF"><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend><strong>2. Opciones de Formación y Preferencias</strong></legend>
+          <br>
+
+          <p><strong>Jornada de Estudio (Radio):</strong></p>
+          <label><input type="radio" name="jornada" value="manana" required> Mañana (07:30 - 10:30)</label><br>
+          <label><input type="radio" name="jornada" value="tarde"> Tarde (10:30 - 15:00)</label><br>
+          <label><input type="radio" name="jornada" value="sabados" checked> Sábados Intensivo</label><br><br>
+
+          <p><strong>Áreas de Interés (Checkbox):</strong></p>
+          <label><input type="checkbox" name="interes_bd" value="1" checked> Bases de Datos &amp; SQL</label><br>
+          <label><input type="checkbox" name="interes_html" value="1" checked> Maquetación HTML5</label><br>
+          <label><input type="checkbox" name="interes_logica" value="1" checked> Lógica &amp; Algoritmos</label><br>
+          <label><input type="checkbox" name="interes_qa" value="1"> QA Automation</label><br><br>
+
+          <label for="selEscuela"><strong>Escuela CESDE:</strong></label><br>
+          <select id="selEscuela" name="escuela" required>
+            <option value="">-- Selecciona una escuela --</option>
+            <option value="software" selected>Escuela de Nuevas Tecnologías (Desarrollo de Software)</option>
+            <option value="empresarial">Escuela de Desarrollo Empresarial</option>
+            <option value="salud">Escuela de Salud y Cuidado</option>
+            <option value="agro">Escuela del Agro</option>
+          </select><br><br>
+
+          <label for="txtComentarios"><strong>Comentarios / Observaciones:</strong></label><br>
+          <textarea id="txtComentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus observaciones..." maxlength="500"></textarea><br><br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+          <legend><strong>3. Acciones</strong></legend>
+          <br>
+          <input type="submit" value="Enviar Formulario">
+          <input type="reset" value="Restablecer / Limpiar">
+        </fieldset>
+
+      </form>
+    </section>
+  </main>
+
+  <hr>
+
+  <footer>
+    <p><strong>Estudiante:</strong> Jeiser Abraham Gutiérrez | <a href="mailto:jeisgutierrez@cesde.net">jeisgutierrez@cesde.net</a></p>
+    <p><small>&copy; 2026 CESDE - Escuela de Nuevas Tecnologías</small></p>
+  </footer>
+
+</body>
+</html>

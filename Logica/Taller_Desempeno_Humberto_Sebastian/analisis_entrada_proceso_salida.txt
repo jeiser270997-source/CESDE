@@ -1,0 +1,155 @@
+﻿TALLER DE ALGORITMOS - NOTA DE DESEMPEÑO
+INTEGRANTES: Humberto Pinto y Sebastian Correa
+
+============================================================
+
+EJERCICIO 5
+
+ENUNCIADO
+
+Leer un número y su exponente, mostrar el resultado.
+
+
+//DATOS DE ENTRADA
+
+base = 0
+exponente = 0
+
+
+//PROCESO
+
+resultado = base ^ exponente
+
+
+//DATOS DE SALIDA
+
+base
+exponente
+resultado
+
+
+INICIO
+
+	base = 0
+	exponente = 0
+	resultado = 0
+
+	Escribir "Ingrese el numero base"
+	Leer base
+	Escribir "Ingrese el exponente"
+	Leer exponente
+
+	//PROCESO
+
+	resultado = base ^ exponente
+
+	//DATOS DE SALIDA
+
+	Escribir "Numero base: ", base
+	Escribir "Exponente: ", exponente
+	Escribir "El resultado es: ", resultado
+	Escribir "Programa realizado por Humberto Pinto y Sebastian Correa"
+
+FIN
+
+
+============================================================
+
+EJERCICIO 7
+
+ENUNCIADO
+
+Realizar un algoritmo que calcule el total de dinero que debe liquidar
+un conductor, si tenemos el número de pasajeros que transporta en
+el día y el valor del pasaje. Imprima el número de pasajeros, el valor del
+pasaje y el total a pagar.
+
+
+//DATOS DE ENTRADA
+
+num_pasajeros = 0
+valor_pasaje = 0
+
+
+//PROCESO
+
+total_pagar = num_pasajeros * valor_pasaje
+
+
+//DATOS DE SALIDA
+
+num_pasajeros
+valor_pasaje
+total_pagar
+
+
+INICIO
+
+	num_pasajeros = 0
+	valor_pasaje = 0
+	total_pagar = 0
+
+	Escribir "Ingrese el numero de pasajeros"
+	Leer num_pasajeros
+	Escribir "Ingrese el valor del pasaje"
+	Leer valor_pasaje
+
+	//PROCESO
+
+	total_pagar = num_pasajeros * valor_pasaje
+
+	//DATOS DE SALIDA
+
+	Escribir "Numero de pasajeros: ", num_pasajeros
+	Escribir "Valor del pasaje: ", valor_pasaje
+	Escribir "Total a pagar: ", total_pagar
+	Escribir "Programa realizado por Humberto Pinto y Sebastian Correa"
+
+FIN
+
+
+============================================================
+
+EJERCICIO 9
+
+ENUNCIADO
+
+Calcular el área del círculo si se tiene el valor del radio. La fórmula para
+calcular el valor del área es. Área = Pi * radio*radio
+
+
+//DATOS DE ENTRADA
+
+radio = 0
+
+
+//PROCESO
+
+area = 3.1416 * radio * radio
+
+
+//DATOS DE SALIDA
+
+radio
+area
+
+
+INICIO
+
+	radio = 0
+	area = 0
+
+	Escribir "Ingrese el radio del circulo"
+	Leer radio
+
+	//PROCESO
+
+	area = 3.1416 * radio * radio
+
+	//DATOS DE SALIDA
+
+	Escribir "Radio ingresado: ", radio
+	Escribir "El area del circulo es: ", area
+	Escribir "Programa realizado por Humberto Pinto y Sebastian Correa"
+
+FIN

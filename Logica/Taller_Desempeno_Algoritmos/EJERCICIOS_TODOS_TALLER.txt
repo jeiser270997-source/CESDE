@@ -1,0 +1,165 @@
+﻿TALLER DE ALGORITMOS - NOTA DE DESEMPEÑO
+INTEGRANTES: Jeiser Gutierrez y Emilio
+
+============================================================
+
+EJERCICIO 1
+
+ENUNCIADO
+
+Realizar un algoritmo que lea el nombre de un estudiante, sus tres
+notas y calcule la nota definitiva.
+
+
+//DATOS DE ENTRADA
+
+nombre = ""
+nota1 = 0
+nota2 = 0
+nota3 = 0
+
+
+//PROCESO
+
+nota_definitiva = (nota1 + nota2 + nota3) / 3
+
+
+//DATOS DE SALIDA
+
+nombre
+nota1
+nota2
+nota3
+nota_definitiva
+
+
+INICIO
+
+	nombre = ""
+	nota1 = 0
+	nota2 = 0
+	nota3 = 0
+	nota_definitiva = 0
+
+	Escribir "Ingrese el nombre del estudiante"
+	Leer nombre
+	Escribir "Ingrese la nota 1"
+	Leer nota1
+	Escribir "Ingrese la nota 2"
+	Leer nota2
+	Escribir "Ingrese la nota 3"
+	Leer nota3
+
+	//PROCESO
+
+	nota_definitiva = (nota1 + nota2 + nota3) / 3
+
+	//DATOS DE SALIDA
+
+	Escribir "Estudiante: ", nombre
+	Escribir "Nota 1: ", nota1
+	Escribir "Nota 2: ", nota2
+	Escribir "Nota 3: ", nota3
+	Escribir "Nota Definitiva: ", nota_definitiva
+	Escribir "Programa realizado por Jeiser Gutierrez y Emilio"
+
+FIN
+
+
+============================================================
+
+EJERCICIO 4
+
+ENUNCIADO
+
+Leer un número y elevarlo al cuadro. Mostrar el resultado.
+
+
+//DATOS DE ENTRADA
+
+numero = 0
+
+
+//PROCESO
+
+resultado = numero * numero
+
+
+//DATOS DE SALIDA
+
+numero
+resultado
+
+
+INICIO
+
+	numero = 0
+	resultado = 0
+
+	Escribir "Ingrese un numero"
+	Leer numero
+
+	//PROCESO
+
+	resultado = numero * numero
+
+	//DATOS DE SALIDA
+
+	Escribir "El numero ingresado es: ", numero
+	Escribir "El resultado elevado al cuadrado es: ", resultado
+	Escribir "Programa realizado por Jeiser Gutierrez y Emilio"
+
+FIN
+
+
+============================================================
+
+EJERCICIO 10
+
+ENUNCIADO
+
+Calcular los años de persona conociendo su año de nacimiento y el
+año actual.
+
+
+//DATOS DE ENTRADA
+
+anio_nacimiento = 0
+anio_actual = 0
+
+
+//PROCESO
+
+edad = anio_actual - anio_nacimiento
+
+
+//DATOS DE SALIDA
+
+anio_nacimiento
+anio_actual
+edad
+
+
+INICIO
+
+	anio_nacimiento = 0
+	anio_actual = 0
+	edad = 0
+
+	Escribir "Ingrese el ano de nacimiento"
+	Leer anio_nacimiento
+	Escribir "Ingrese el ano actual"
+	Leer anio_actual
+
+	//PROCESO
+
+	edad = anio_actual - anio_nacimiento
+
+	//DATOS DE SALIDA
+
+	Escribir "Ano de nacimiento: ", anio_nacimiento
+	Escribir "Ano actual: ", anio_actual
+	Escribir "La edad aproximada de la persona es: ", edad, " anos."
+	Escribir "Programa realizado por Jeiser Gutierrez y Emilio"
+
+FIN

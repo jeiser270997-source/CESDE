@@ -1,0 +1,47 @@
+EJERCICIO 7
+
+ENUNCIADO
+
+Elaborar un algoritmo que le permita al usuario ingresar la
+distancia recorrida por un vehículo y el tiempo que se
+demora en recorrerlo y el computador le muestre la
+velocidad con que la recorrió.
+
+
+//DATOS DE ENTRADA
+
+distancia = 0
+tiempo = 0
+
+
+//PROCESO
+
+velocidad = distancia / tiempo
+
+
+//DATOS DE SALIDA
+
+velocidad
+
+
+INICIO
+
+	distancia = 0
+	tiempo = 0
+	velocidad = 0
+
+	Escribir "Ingrese la distancia recorrida (ej. km o metros)"
+	Leer distancia
+	Escribir "Ingrese el tiempo empleado (ej. horas o segundos)"
+	Leer tiempo
+
+	//PROCESO
+
+	velocidad = distancia / tiempo
+
+	//DATOS DE SALIDA
+
+	Escribir "La velocidad calculada del vehiculo es: ", velocidad
+	Escribir "Programa realizado por Jeiser Gutierrez"
+
+FIN

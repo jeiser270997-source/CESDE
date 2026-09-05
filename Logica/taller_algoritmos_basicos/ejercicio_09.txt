@@ -1,0 +1,67 @@
+EJERCICIO 9
+
+ENUNCIADO
+
+Crear un algoritmo que le permita al usuario ingresar el
+nombre de un estudiante, la cantidad de materias que
+matriculó y el valor de cada materia y el computador le
+imprima el valor neto de la matrícula sabiendo que al valor
+de las materias se le debe sumar la papelería que tiene un
+costo fijo de $20.000 y el carné un valor de $8.000. El
+estudiante tiene un descuento del 20% sobre el costo de las
+materias.
+
+
+//DATOS DE ENTRADA
+
+nom_estudiante = ""
+cant_materias = 0
+valor_materia = 0
+
+
+//PROCESO
+
+costo_materias = cant_materias * valor_materia
+descuento = costo_materias * 0.20
+subtotal_materias = costo_materias - descuento
+neto_matricula = subtotal_materias + 20000 + 8000
+
+
+//DATOS DE SALIDA
+
+neto_matricula
+
+
+INICIO
+
+	nom_estudiante = ""
+	cant_materias = 0
+	valor_materia = 0
+	costo_materias = 0
+	descuento = 0
+	subtotal_materias = 0
+	neto_matricula = 0
+
+	Escribir "Ingrese el nombre del estudiante"
+	Leer nom_estudiante
+	Escribir "Ingrese la cantidad de materias matriculadas"
+	Leer cant_materias
+	Escribir "Ingrese el valor de cada materia"
+	Leer valor_materia
+
+	//PROCESO
+
+	costo_materias = cant_materias * valor_materia
+	descuento = costo_materias * 0.20
+	subtotal_materias = costo_materias - descuento
+	neto_matricula = subtotal_materias + 20000 + 8000
+
+	//DATOS DE SALIDA
+
+	Escribir "Estudiante: ", nom_estudiante
+	Escribir "Costo bruto de materias: ", costo_materias
+	Escribir "Descuento del 20% sobre materias: ", descuento
+	Escribir "Valor neto final de la matricula: ", neto_matricula
+	Escribir "Programa realizado por Jeiser Gutierrez"
+
+FIN

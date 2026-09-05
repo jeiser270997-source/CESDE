@@ -1,0 +1,57 @@
+INTRODUCCION A LA PROGRAMACION
+HTML5 
+
+
+NO IMPORTA QUE VAYAS DESPACIO MIENTRAS NO TE DETENGAS
+
+
+QUE ES HTML  LENGUAJE DE MARCADO DE HIPERTEXTO, no es un lenguaje de programacion, es u lenguaje de marcado  lenguaje para hacer esqueleto de paginas web, el responsive quien se encarga html o ccs? 
+
+
+html es la estructura solamente, entonces no lleva estilos ni nada? fuentes y cosas asi? vamos a ver 2 clases de html esta y otra y luego ccs
+
+
+vamos a trabajar con vs code y hay que  buscar comandos utiles
+
+
+landing page pagina de aterrizaje , tengo que cambiar ahora usar vs code  para familiarizarme y trabajar con git y github
+
+
+!y enter me dio esto
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+
+
+
+
+la estructura basica de html 5
+
+
+si quitamos docktype queda en html normal , si la dejamos es html 5 que diferencia hay? cuantos html hay paso por el 2 3 4?
+
+
+
+
+
+
+ya estamos trabajando en vs code tuve que cambiar perfil porque tienen muchas extensiones, como puedo manejar mis extensiones y personalizar para yo manejar mi cosa en github?
+
+
+table>tr*3>td*3
+
+
+entonces tr es fila td es columna y el simbolo > seria como un entonces osea algo de sistaxys de html5 correcto?
+
+
+se puede hacer invertido? td tr o tr td?
