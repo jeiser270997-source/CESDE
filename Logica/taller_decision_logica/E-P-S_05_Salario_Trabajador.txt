@@ -1,0 +1,109 @@
+EVIDENCIA DE APRENDIZAJE - LÓGICA DE PROGRAMACIÓN CESDE
+ESTUDIANTE: Jeiser Abraham Gutierrez Torres
+DOCENTE: Ana Liliana Vera Gomez
+TALLER: Decisiones Lógicas y Condicionales (Tríada CESDE)
+
+============================================================
+
+ENUNCIADO:
+5. Elaborar un algoritmo que calcule el salario neto a pagar a un
+trabajador teniendo en cuenta su tipo de vinculación laboral:
+FIJO o TEMPORAL.
+Para cualquier trabajador se digita el nombre, tipo de vinculación
+(1 para FIJO, 2 para TEMPORAL) y número de horas trabajadas en el mes.
+- Si es FIJO: Se digita el valor de la hora, el monto de bonificaciones
+  y el monto de deducciones.
+  Salario Neto = (horas_trabajadas * valor_hora) + bonificaciones - deducciones.
+- Si es TEMPORAL: La tarifa de la hora es fija de $6.000 COP por hora base,
+  no recibe bonificaciones ($0) ni se le aplican deducciones ($0).
+  Salario Neto = horas_trabajadas * 6000.
+El programa debe imprimir el desglose completo del pago del trabajador.
+
+============================================================
+
+DATOS DE ENTRADA:
+nombre = ""
+tipo_trabajador = 0
+horas_trabajadas = 0
+valor_hora = 0.0
+bonificaciones = 0.0
+deducciones = 0.0
+
+PROCESO:
+SI (tipo_trabajador == 1) ENTONCES
+    tipo_texto = "FIJO"
+    // Solicitar valor_hora, bonificaciones y deducciones
+    salario_bruto = horas_trabajadas * valor_hora
+    salario_neto = salario_bruto + bonificaciones - deducciones
+SINO
+    tipo_texto = "TEMPORAL"
+    valor_hora = 6000.0
+    bonificaciones = 0.0
+    deducciones = 0.0
+    salario_bruto = horas_trabajadas * valor_hora
+    salario_neto = salario_bruto
+FIN SI
+
+DATOS DE SALIDA:
+nombre
+tipo_texto
+horas_trabajadas
+valor_hora
+salario_bruto
+bonificaciones
+deducciones
+salario_neto
+
+============================================================
+
+ALGORITMO (PSEUDOCÓDIGO - BLOC DE NOTAS):
+
+INICIO
+    nombre = ""
+    tipo_trabajador = 0
+    tipo_texto = ""
+    horas_trabajadas = 0
+    valor_hora = 0.0
+    bonificaciones = 0.0
+    deducciones = 0.0
+    salario_bruto = 0.0
+    salario_neto = 0.0
+
+    Imprima "Ingrese el nombre del trabajador:"
+    Lea nombre
+    Imprima "Ingrese el tipo de vinculación (1: FIJO, 2: TEMPORAL):"
+    Lea tipo_trabajador
+    Imprima "Ingrese las horas trabajadas en el mes:"
+    Lea horas_trabajadas
+
+    SI (tipo_trabajador == 1) ENTONCES
+        tipo_texto = "FIJO"
+        Imprima "Ingrese el valor de la hora para trabajador FIJO:"
+        Lea valor_hora
+        Imprima "Ingrese el valor de las bonificaciones:"
+        Lea bonificaciones
+        Imprima "Ingrese el valor de las deducciones:"
+        Lea deducciones
+        salario_bruto = horas_trabajadas * valor_hora
+        salario_neto = salario_bruto + bonificaciones - deducciones
+    SINO
+        tipo_texto = "TEMPORAL"
+        valor_hora = 6000.0
+        bonificaciones = 0.0
+        deducciones = 0.0
+        salario_bruto = horas_trabajadas * valor_hora
+        salario_neto = salario_bruto
+    FIN SI
+
+    Imprima "=================================================="
+    Imprima "Trabajador: " + nombre
+    Imprima "Tipo de Vinculación: " + tipo_texto
+    Imprima "Horas Trabajadas: " + horas_trabajadas
+    Imprima "Valor por Hora: $" + valor_hora
+    Imprima "Salario Bruto: $" + salario_bruto
+    Imprima "Bonificaciones: $" + bonificaciones
+    Imprima "Deducciones: $" + deducciones
+    Imprima "Salario Neto a Pagar: $" + salario_neto
+    Imprima "=================================================="
+    Imprima "Programa realizado por Jeiser Gutierrez"
+FIN

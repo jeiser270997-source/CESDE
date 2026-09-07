@@ -1,0 +1,74 @@
+EVIDENCIA DE APRENDIZAJE - LÓGICA DE PROGRAMACIÓN CESDE
+ESTUDIANTE: Jeiser Abraham Gutierrez Torres
+DOCENTE: Ana Liliana Vera Gomez
+TALLER: Decisiones Lógicas y Condicionales (Tríada CESDE)
+
+============================================================
+
+ENUNCIADO:
+1. Elaborar un algoritmo que le permita al usuario ingresar los nombres
+y las edades de 2 hermanos (no gemelos). El programa debe determinar y
+mostrar en pantalla el nombre y la edad del hermano mayor, indicando
+además la diferencia de edad existente entre ambos.
+
+============================================================
+
+DATOS DE ENTRADA:
+nombre_hermano1 = ""
+edad_hermano1 = 0
+nombre_hermano2 = ""
+edad_hermano2 = 0
+
+PROCESO:
+SI (edad_hermano1 > edad_hermano2) ENTONCES
+    nombre_mayor = nombre_hermano1
+    edad_mayor = edad_hermano1
+    diferencia_edad = edad_hermano1 - edad_hermano2
+SINO
+    nombre_mayor = nombre_hermano2
+    edad_mayor = edad_hermano2
+    diferencia_edad = edad_hermano2 - edad_hermano1
+FIN SI
+
+DATOS DE SALIDA:
+nombre_mayor
+edad_mayor
+diferencia_edad
+
+============================================================
+
+ALGORITMO (PSEUDOCÓDIGO - BLOC DE NOTAS):
+
+INICIO
+    nombre_hermano1 = ""
+    edad_hermano1 = 0
+    nombre_hermano2 = ""
+    edad_hermano2 = 0
+    nombre_mayor = ""
+    edad_mayor = 0
+    diferencia_edad = 0
+
+    Imprima "Ingrese el nombre del primer hermano:"
+    Lea nombre_hermano1
+    Imprima "Ingrese la edad del primer hermano:"
+    Lea edad_hermano1
+
+    Imprima "Ingrese el nombre del segundo hermano:"
+    Lea nombre_hermano2
+    Imprima "Ingrese la edad del segundo hermano:"
+    Lea edad_hermano2
+
+    SI (edad_hermano1 > edad_hermano2) ENTONCES
+        nombre_mayor = nombre_hermano1
+        edad_mayor = edad_hermano1
+        diferencia_edad = edad_hermano1 - edad_hermano2
+    SINO
+        nombre_mayor = nombre_hermano2
+        edad_mayor = edad_hermano2
+        diferencia_edad = edad_hermano2 - edad_hermano1
+    FIN SI
+
+    Imprima "El hermano mayor es: " + nombre_mayor + " con " + edad_mayor + " años."
+    Imprima "La diferencia de edad es de: " + diferencia_edad + " años."
+    Imprima "Programa realizado por Jeiser Gutierrez"
+FIN

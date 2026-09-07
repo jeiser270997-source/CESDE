@@ -1,0 +1,100 @@
+EVIDENCIA DE APRENDIZAJE - LÓGICA DE PROGRAMACIÓN CESDE
+ESTUDIANTE: Jeiser Abraham Gutierrez Torres
+DOCENTE: Ana Liliana Vera Gomez
+TALLER: Decisiones Lógicas y Condicionales (Tríada CESDE)
+
+============================================================
+
+ENUNCIADO:
+3. Una empresa de transporte urbano desea comparar la recaudación de dos
+de sus buses al final de la jornada. Por cada bus se digita la placa, el
+número de pasajeros transportados y el valor del pasaje. El programa debe
+calcular y mostrar:
+a) El producido individual de cada bus.
+b) El total general recaudado entre ambos buses.
+c) Determinar cuál bus obtuvo mayor recaudación o si ambos produjeron lo mismo.
+
+============================================================
+
+DATOS DE ENTRADA:
+placa_bus1 = ""
+pasajeros_bus1 = 0
+pasaje_bus1 = 0.0
+
+placa_bus2 = ""
+pasajeros_bus2 = 0
+pasaje_bus2 = 0.0
+
+PROCESO:
+recaudo_bus1 = pasajeros_bus1 * pasaje_bus1
+recaudo_bus2 = pasajeros_bus2 * pasaje_bus2
+total_general = recaudo_bus1 + recaudo_bus2
+
+SI (recaudo_bus1 > recaudo_bus2) ENTONCES
+    mensaje_mayor = "El bus con placa " + placa_bus1 + " obtuvo la mayor recaudación con un total de $" + recaudo_bus1
+SINO
+    SI (recaudo_bus2 > recaudo_bus1) ENTONCES
+        mensaje_mayor = "El bus con placa " + placa_bus2 + " obtuvo la mayor recaudación con un total de $" + recaudo_bus2
+    SINO
+        mensaje_mayor = "Ambos buses obtuvieron exactamente la misma recaudación ($" + recaudo_bus1 + ")"
+    FIN SI
+FIN SI
+
+DATOS DE SALIDA:
+recaudo_bus1
+recaudo_bus2
+total_general
+mensaje_mayor
+
+============================================================
+
+ALGORITMO (PSEUDOCÓDIGO - BLOC DE NOTAS):
+
+INICIO
+    placa_bus1 = ""
+    pasajeros_bus1 = 0
+    pasaje_bus1 = 0.0
+    recaudo_bus1 = 0.0
+
+    placa_bus2 = ""
+    pasajeros_bus2 = 0
+    pasaje_bus2 = 0.0
+    recaudo_bus2 = 0.0
+
+    total_general = 0.0
+    mensaje_mayor = ""
+
+    Imprima "Ingrese la placa del primer bus:"
+    Lea placa_bus1
+    Imprima "Ingrese los pasajeros transportados por el bus " + placa_bus1 + ":"
+    Lea pasajeros_bus1
+    Imprima "Ingrese el valor del pasaje del bus " + placa_bus1 + ":"
+    Lea pasaje_bus1
+
+    Imprima "Ingrese la placa del segundo bus:"
+    Lea placa_bus2
+    Imprima "Ingrese los pasajeros transportados por el bus " + placa_bus2 + ":"
+    Lea pasajeros_bus2
+    Imprima "Ingrese el valor del pasaje del bus " + placa_bus2 + ":"
+    Lea pasaje_bus2
+
+    recaudo_bus1 = pasajeros_bus1 * pasaje_bus1
+    recaudo_bus2 = pasajeros_bus2 * pasaje_bus2
+    total_general = recaudo_bus1 + recaudo_bus2
+
+    SI (recaudo_bus1 > recaudo_bus2) ENTONCES
+        mensaje_mayor = "El bus de placa " + placa_bus1 + " obtuvo la mayor recaudación."
+    SINO
+        SI (recaudo_bus2 > recaudo_bus1) ENTONCES
+            mensaje_mayor = "El bus de placa " + placa_bus2 + " obtuvo la mayor recaudación."
+        SINO
+            mensaje_mayor = "Ambos buses produjeron la misma cantidad de dinero."
+        FIN SI
+    FIN SI
+
+    Imprima "Recaudo del bus " + placa_bus1 + ": $" + recaudo_bus1
+    Imprima "Recaudo del bus " + placa_bus2 + ": $" + recaudo_bus2
+    Imprima "Total general recaudado: $" + total_general
+    Imprima "Resultado de la comparación: " + mensaje_mayor
+    Imprima "Programa realizado por Jeiser Gutierrez"
+FIN
