@@ -1,0 +1,27 @@
+/*esto es un selecto que afecta en todos los elementos de mi pagina*/
+*{
+    margin:0px;
+    padding: 0px;
+}
+/*generar estilos por medio de una clase*/
+.imagenCl
+{
+    border:7px solid blue;
+    padding: 20px;
+    margin: 50px;
+}
+#video1
+{
+    width: 200px ;
+    height: 150px ;
+}
+#video3
+{
+
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px 5px #7d6a6a;
+}
+#textoProductosCasa>h2+p+p
+{
+    color:red;
+}

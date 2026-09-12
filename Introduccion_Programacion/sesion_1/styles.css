@@ -1,0 +1,6 @@
+﻿/*Esto es un selector que afecta en todos los elementos de mi pagina*/
+* {
+  margin: 0px;
+  padding: opx;
+}
+

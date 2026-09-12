@@ -1,0 +1,134 @@
+﻿/* ==========================================================================
+   HOJA DE ESTILOS CSS - SESIÓN 7 (CESDE)
+   Tema: Fundamentos de CSS, Selectores, Box Model y Colores
+   ========================================================================== */
+
+/* 1. RESET BÁSICO UNIVERSAL: Elimina márgenes por defecto del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+/* 2. ESTILOS GENERALES DEL DOCUMENTO */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f9;
+    color: #333333;
+}
+
+/* 3. ENCABEZADO Y NAVEGACIÓN */
+.header {
+    background-color: #1e293b;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #38bdf8; /* Cambio de color al pasar el mouse */
+}
+
+/* 4. SECCIÓN HERO / PRINCIPAL */
+.main-content {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.hero-section {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 700px;
+    margin: 0 auto 1.5rem auto;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+/* 5. CONTENEDOR DE TARJETAS (PRACTICAR BOX MODEL / FLEXBOX) */
+.cards-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 250px;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #2563eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+/* 6. PIE DE PÁGINA */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+}
